@@ -75,24 +75,25 @@ def get_filters():
     valid_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
 
     # get user input for city ( HINT: Use a while loop to handle invalid inputs
-    print('I have information from three cities: Chicago, New York City and Washington\n')
-    print('Which city would you like to explore?')
+    print('I have information from three cities: Chicago, New York City and Washington\n',\
+        'Which city would you like to explore?')
+
     city = input('Enter your response here --> ').lower()
 
     # check the validity of user entry for City
     city = is_valid(city, valid_cities)
 
     # get user input for month (all, january, february, ... , june)
-    print('\nI also have information for all months from January to June\n')
-    print('Any particular month of interest? If not, please enter the keyword \'All\'')
+    print('\nI also have information for all months from January to June\n',\
+        'Any particular month of interest? If not, please enter the keyword \'All\'')
     month = input('Enter your response here --> ').lower()
 
     # check the validity of user entry for month
     month = is_valid(month, valid_months)
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    print('One more thing! You can filter my analysis by any day from Monday to Sunday\n')
-    print('Any particular day of interest? If not, please enter the keyword \'All\'')
+    print('One more thing! You can filter my analysis by any day from Monday to Sunday\n',\
+        'Any particular day of interest? If not, please enter the keyword \'All\'')
     day = input('Enter your response here --> ').lower()
 
     # check the validity of user entry for Weekday
