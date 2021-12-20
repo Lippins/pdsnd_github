@@ -40,6 +40,6 @@ Program can be run through the terminal (UNIX), Git Bash (Windows) or any simila
 	* washington.csv
 
 ### Credits
-Udacity: [Udacity Data Science Nanodegree program](https://www.udacity.com/course/data-scientist-nanodegree--nd025)
-Scholarship sponsor: [Access Bank Plc](https://www.accessbankplc.com)
+- Udacity: [Udacity Data Science Nanodegree program](https://www.udacity.com/course/data-scientist-nanodegree--nd025)
+- Scholarship sponsor: [Access Bank Plc](https://www.accessbankplc.com)
 
