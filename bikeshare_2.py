@@ -21,7 +21,7 @@ def is_valid(item, item_list):
     """
     print('\nAssessing your response...')
 
-    while item.lower() not in item_list:
+    while item not in item_list:
         print('Oops! Wrong input detected: \'{}\''.format(item))
         item = input('Please select one: {}\n--> '.format(' <-> '.join(item_list).title())).lower()
         print('\nAssessing your response...')
@@ -268,14 +268,14 @@ def display_raw_data(df):
     counter = 0
 
     #Start loop based on user response
-    while answer.lower() == 'y':
+    while answer == 'y':
         print('\nLoading the first five rows...\n')
 
-        while counter < df.size and answer.lower() == 'y':
+        while counter < df.size and answer == 'y':
             print('Querying memory...\n')
             print(df[counter: counter+5])
             counter +=5
-            answer = input('Would you love to see some more? Enter y/n --> ')
+            answer = input('Would you love to see some more? Enter y/n --> ').lower()
             answer = is_valid(answer, ['y','n'])
 
         # End loop and notify the user when there is no more data to display
@@ -296,9 +296,9 @@ def main():
         user_stats(df)
         display_raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no --> ')
+        restart = input('\nWould you like to restart? Enter yes or no --> ').lower()
         restart = is_valid(restart, ['yes','no'])
-        if restart.lower() != 'yes':
+        if restart != 'yes':
             break
 
     print('\n', '-'*40, '\nTHANK YOU FOR YOUR TIME\n', 'Come Back Again Soon!')
